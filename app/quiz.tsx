@@ -6,6 +6,7 @@ import { Feather } from '@expo/vector-icons';
 import { useLocalSearchParams, router } from 'expo-router';
 import OptionButton from '@/components/OptionButton';
 import ProgressBar from '@/components/ProgressBar';
+import Data from '@/data/questions.json';
 
 // Dados de exemplo - substitua pelo seu arquivo questions.json
 const questionsData = {
@@ -37,15 +38,22 @@ const questionsData = {
 
 export default function QuizScreen() {
     const params = useLocalSearchParams();
-    const categoryId = parseInt(params.categoryId.toString());
+    const categoryId = parseInt(params.categoryId?.toString() || 1);
 
-    const category = questionsData.categories.find(cat => cat.id === categoryId);
+    const category = Data.categories.find(cat => cat.id === categoryId);
 
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [score, setScore] = useState(0);
     const [selectedOption, setSelectedOption] = useState(null);
     const [showAnswer, setShowAnswer] = useState(false);
     const [timeLeft, setTimeLeft] = useState(30); // 30 segundos por pergunta
+
+    if (!category) {
+        
+        Alert.alert("Erro", "Categoria não encontrada");
+        router.back();
+        return null; // Retornamos null para não renderizar nada mais
+    }
 
     const currentQuestion = category.questions[currentQuestionIndex];
 

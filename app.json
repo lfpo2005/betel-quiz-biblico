@@ -10,6 +10,8 @@
       "resizeMode": "contain",
       "backgroundColor": "#4B7BEC"
     },
+    "scheme": "betelquizbiblico",
+    "newArchEnabled": true,
     "updates": {
       "fallbackToCacheTimeout": 0
     },
@@ -28,7 +30,12 @@
       "package": "com.betel.quizbiblico"
     },
     "web": {
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ec807614-af8e-4ae0-8553-eddaaad52cb2"
+      }
     }
   }
 }

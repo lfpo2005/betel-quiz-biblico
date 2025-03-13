@@ -3,6 +3,7 @@ import React from 'react';
 import { StyleSheet, Text, View, FlatList, TouchableOpacity, SafeAreaView } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { router } from 'expo-router';
+import Data from '@/data/questions.json';
 
 // Dados de exemplo - você deverá criar um arquivo data/questions.json com estes dados
 const categoriesData = [

@@ -125,6 +125,246 @@
                     "correctAnswer": 1,
                     "explanation": "Moisés recebeu os Dez Mandamentos no Monte Sinai (Êxodo 19:20).",
                     "points": 10
+                },
+                {
+                    "question": "Qual era o nome da esposa de Moisés?",
+                    "options": [
+                        "Séfora",
+                        "Rebeca",
+                        "Leia",
+                        "Raquel"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "Séfora era a esposa de Moisés, filha de Jetro (Êxodo 2:21).",
+                    "points": 10
+                },
+                {
+                    "question": "Quantos anos Noé viveu ao todo?",
+                    "options": [
+                        "777 anos",
+                        "850 anos",
+                        "912 anos",
+                        "950 anos"
+                    ],
+                    "correctAnswer": 3,
+                    "explanation": "Noé viveu 950 anos conforme Gênesis 9:29.",
+                    "points": 10
+                },
+                {
+                    "question": "Qual era o nome do filho de Abraão com Hagar?",
+                    "options": [
+                        "Isaque",
+                        "Ismael",
+                        "Esaú",
+                        "Jacó"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Ismael foi o filho de Abraão com Hagar, serva de Sara (Gênesis 16:15).",
+                    "points": 10
+                },
+                {
+                    "question": "Como se chamava o irmão de Moisés?",
+                    "options": [
+                        "Josué",
+                        "Arão",
+                        "Calebe",
+                        "Eli"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Arão era o irmão mais velho de Moisés (Êxodo 4:14).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual dos seguintes não é um dos filhos de Jacó?",
+                    "options": [
+                        "Judá",
+                        "José",
+                        "Josué",
+                        "Benjamim"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Josué não era filho de Jacó. Os 12 filhos de Jacó eram Rúben, Simeão, Levi, Judá, Dã, Naftali, Gade, Aser, Issacar, Zebulom, José e Benjamim.",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o primeiro rei de Israel?",
+                    "options": [
+                        "Davi",
+                        "Saul",
+                        "Samuel",
+                        "Salomão"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Saul foi o primeiro rei de Israel, ungido pelo profeta Samuel (1 Samuel 10:1).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual profeta foi carregado ao céu em uma carruagem de fogo?",
+                    "options": [
+                        "Elias",
+                        "Eliseu",
+                        "Isaías",
+                        "Ezequiel"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "Elias foi levado ao céu em uma carruagem de fogo (2 Reis 2:11).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual destes não é um dos livros de Moisés (Pentateuco)?",
+                    "options": [
+                        "Gênesis",
+                        "Êxodo",
+                        "Josué",
+                        "Deuteronômio"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Josué não faz parte do Pentateuco (os cinco primeiros livros da Bíblia atribuídos a Moisés).",
+                    "points": 10
+                },
+                {
+                    "question": "Quantos anos Matusalém viveu?",
+                    "options": [
+                        "777 anos",
+                        "912 anos",
+                        "969 anos",
+                        "985 anos"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Matusalém viveu 969 anos, sendo o homem mais velho mencionado na Bíblia (Gênesis 5:27).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual profeta foi devorado por um leão após desobedecer a Deus?",
+                    "options": [
+                        "O profeta de Judá",
+                        "Natã",
+                        "Jonas",
+                        "Naum"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "O profeta anônimo de Judá foi morto por um leão após desobedecer a Deus (1 Reis 13:24).",
+                    "points": 10
+                },
+                {
+                    "question": "Como Raabe ajudou os espias israelitas em Jericó?",
+                    "options": [
+                        "Deu-lhes comida",
+                        "Escondeu-os em sua casa",
+                        "Deu-lhes armas",
+                        "Mostrou um túnel secreto"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Raabe escondeu os espias em sua casa e depois os ajudou a escapar (Josué 2:1-16).",
+                    "points": 10
+                },
+                {
+                    "question": "Que objeto Moisés usou para dividir o Mar Vermelho?",
+                    "options": [
+                        "Uma espada",
+                        "Um cajado",
+                        "Uma lança",
+                        "Uma trombeta"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Moisés usou seu cajado para dividir o Mar Vermelho (Êxodo 14:16).",
+                    "points": 10
+                },
+                {
+                    "question": "O que Jacó viu em seu sonho quando dormia com uma pedra por travesseiro?",
+                    "options": [
+                        "Um jardim",
+                        "Uma escada até o céu",
+                        "Um rio caudaloso",
+                        "Uma montanha"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Jacó viu uma escada que ia da terra até o céu, com anjos subindo e descendo por ela (Gênesis 28:12).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual o nome do lugar onde Jacó lutou com um anjo?",
+                    "options": [
+                        "Betel",
+                        "Peniel",
+                        "Canaã",
+                        "Gilgal"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "O lugar foi chamado Peniel, que significa 'face de Deus' (Gênesis 32:30).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual foi a primeira coisa que Noé fez depois de sair da arca?",
+                    "options": [
+                        "Construiu uma cidade",
+                        "Plantou uma vinha",
+                        "Construiu um altar",
+                        "Fez um censo dos animais"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Noé construiu um altar ao Senhor (Gênesis 8:20).",
+                    "points": 10
+                },
+                {
+                    "question": "Como José interpretou o sonho do copeiro do Faraó?",
+                    "options": [
+                        "Ele seria executado",
+                        "Seria libertado e restaurado ao seu cargo",
+                        "Seria vendido como escravo",
+                        "Seria promovido a general"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "José interpretou que o copeiro seria restaurado ao seu cargo em três dias (Gênesis 40:12-13).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual foi o sinal dado a Gideão para confirmar que Deus o usaria para libertar Israel?",
+                    "options": [
+                        "Um terremoto",
+                        "Um velo de lã molhado e depois seco",
+                        "Um eclipse solar",
+                        "Uma sarça ardente"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Deus deu o sinal do velo de lã que ficou molhado enquanto o chão ao redor estava seco, e depois o inverso (Juízes 6:36-40).",
+                    "points": 10
+                },
+                {
+                    "question": "Que alimento Deus enviou para os israelitas no deserto?",
+                    "options": [
+                        "Pão e carne",
+                        "Maná e codornizes",
+                        "Leite e mel",
+                        "Frutas e vegetais"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Deus enviou maná e codornizes para alimentar os israelitas no deserto (Êxodo 16:13-15).",
+                    "points": 10
+                },
+                {
+                    "question": "Como Davi matou Golias?",
+                    "options": [
+                        "Com uma espada",
+                        "Com uma lança",
+                        "Com uma funda e uma pedra",
+                        "Com flechas"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Davi matou Golias com uma funda e uma pedra, atingindo-o na testa (1 Samuel 17:49-50).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual era o nome do pai de Abraão?",
+                    "options": [
+                        "Naor",
+                        "Harã",
+                        "Terá",
+                        "Sem"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "O pai de Abraão era Terá (Gênesis 11:26).",
+                    "points": 10
                 }
             ]
         },
@@ -252,6 +492,246 @@
                     ],
                     "correctAnswer": 2,
                     "explanation": "Paulo estava a caminho de Damasco quando teve seu encontro com Jesus (Atos 9:1-6).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o discípulo que Jesus chamou de 'Pedra'?",
+                    "options": [
+                        "André",
+                        "Pedro",
+                        "João",
+                        "Tiago"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Jesus chamou Simão de Pedro, que significa 'pedra' ou 'rocha' (João 1:42).",
+                    "points": 10
+                },
+                {
+                    "question": "Quantos capítulos tem o Evangelho de João?",
+                    "options": [
+                        "16",
+                        "21",
+                        "28",
+                        "24"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "O Evangelho de João tem 21 capítulos.",
+                    "points": 10
+                },
+                {
+                    "question": "Qual foi o último livro do Novo Testamento a ser escrito?",
+                    "options": [
+                        "Apocalipse",
+                        "João",
+                        "Hebreus",
+                        "2 Pedro"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "Apocalipse é geralmente considerado o último livro do Novo Testamento a ser escrito.",
+                    "points": 10
+                },
+                {
+                    "question": "Em qual ilha João recebeu as visões do Apocalipse?",
+                    "options": [
+                        "Creta",
+                        "Chipre",
+                        "Patmos",
+                        "Malta"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "João estava na ilha de Patmos quando recebeu as visões (Apocalipse 1:9).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual era a profissão de Mateus antes de seguir Jesus?",
+                    "options": [
+                        "Pescador",
+                        "Médico",
+                        "Cobrador de impostos",
+                        "Carpinteiro"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Mateus era cobrador de impostos antes de seguir Jesus (Mateus 9:9).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem escreveu a maior parte das epístolas do Novo Testamento?",
+                    "options": [
+                        "Pedro",
+                        "João",
+                        "Tiago",
+                        "Paulo"
+                    ],
+                    "correctAnswer": 3,
+                    "explanation": "Paulo escreveu a maior parte das epístolas no Novo Testamento, sendo atribuídas a ele 13 cartas.",
+                    "points": 10
+                },
+                {
+                    "question": "Em qual cidade os discípulos foram chamados 'cristãos' pela primeira vez?",
+                    "options": [
+                        "Jerusalém",
+                        "Roma",
+                        "Antioquia",
+                        "Corinto"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Os discípulos foram chamados cristãos pela primeira vez em Antioquia (Atos 11:26).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual destas mulheres NÃO estava presente na crucificação de Jesus?",
+                    "options": [
+                        "Maria Madalena",
+                        "Maria, mãe de Jesus",
+                        "Marta",
+                        "Salomé"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Marta não é mencionada entre as mulheres presentes na crucificação (João 19:25).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual dos evangelhos foi escrito por um médico?",
+                    "options": [
+                        "Mateus",
+                        "Marcos",
+                        "Lucas",
+                        "João"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Lucas, que escreveu o terceiro Evangelho, era médico (Colossenses 4:14).",
+                    "points": 10
+                },
+                {
+                    "question": "Que presente os magos NÃO trouxeram para o menino Jesus?",
+                    "options": [
+                        "Ouro",
+                        "Mirra",
+                        "Incenso",
+                        "Prata"
+                    ],
+                    "correctAnswer": 3,
+                    "explanation": "Os magos trouxeram ouro, incenso e mirra, não prata (Mateus 2:11).",
+                    "points": 10
+                },
+                {
+                    "question": "Quantas pessoas Jesus alimentou com cinco pães e dois peixes?",
+                    "options": [
+                        "Cerca de 4.000",
+                        "Cerca de 5.000",
+                        "Cerca de 7.000",
+                        "Cerca de 3.000"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Jesus alimentou cerca de 5.000 homens, sem contar mulheres e crianças (Mateus 14:21).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual foi o primeiro milagre que Jesus realizou em Caná da Galileia?",
+                    "options": [
+                        "Multiplicação dos pães",
+                        "Cura de um cego",
+                        "Transformação de água em vinho",
+                        "Ressurreição de Lázaro"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "O primeiro milagre de Jesus foi transformar água em vinho nas bodas de Caná (João 2:1-11).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem estava com Paulo quando ele escreveu a carta aos Filipenses?",
+                    "options": [
+                        "Timóteo",
+                        "Barnabé",
+                        "Silas",
+                        "Lucas"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "Timóteo estava com Paulo quando ele escreveu aos Filipenses (Filipenses 1:1).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual era o nome do homem rico que procurou Jesus à noite?",
+                    "options": [
+                        "José de Arimateia",
+                        "Nicodemos",
+                        "Zaqueu",
+                        "Jairo"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Nicodemos, um fariseu e membro do Sinédrio, procurou Jesus à noite (João 3:1-2).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual destes NÃO é um dos frutos do Espírito mencionados em Gálatas?",
+                    "options": [
+                        "Amor",
+                        "Alegria",
+                        "Paciência",
+                        "Sabedoria"
+                    ],
+                    "correctAnswer": 3,
+                    "explanation": "Sabedoria não está na lista dos frutos do Espírito em Gálatas 5:22-23.",
+                    "points": 10
+                },
+                {
+                    "question": "Quem disse: 'Eu sou a ressurreição e a vida'?",
+                    "options": [
+                        "João Batista",
+                        "Pedro",
+                        "Paulo",
+                        "Jesus"
+                    ],
+                    "correctAnswer": 3,
+                    "explanation": "Jesus disse: 'Eu sou a ressurreição e a vida' (João 11:25).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual foi o discípulo que duvidou da ressurreição de Jesus?",
+                    "options": [
+                        "Pedro",
+                        "João",
+                        "Tomé",
+                        "André"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Tomé duvidou da ressurreição até ver Jesus pessoalmente (João 20:24-29).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual cidade Paulo visitou quando foi arrebatado ao terceiro céu?",
+                    "options": [
+                        "Damasco",
+                        "Listra",
+                        "Corinto",
+                        "Não é mencionado"
+                    ],
+                    "correctAnswer": 3,
+                    "explanation": "Paulo não menciona a cidade onde teve essa experiência (2 Coríntios 12:2).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual livro do Novo Testamento contém a frase 'A fé sem obras é morta'?",
+                    "options": [
+                        "Romanos",
+                        "Tiago",
+                        "Hebreus",
+                        "1 Pedro"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "A frase 'A fé sem obras é morta' aparece na carta de Tiago (Tiago 2:17).",
+                    "points": 10
+                },
+                {
+                    "question": "Em que monte Jesus proferiu o Sermão da Montanha?",
+                    "options": [
+                        "Monte Sinai",
+                        "Monte Carmelo",
+                        "Monte das Oliveiras",
+                        "Não é especificado"
+                    ],
+                    "correctAnswer": 3,
+                    "explanation": "A Bíblia não especifica o nome do monte onde Jesus proferiu o Sermão da Montanha, apenas menciona 'um monte' (Mateus 5:1).",
                     "points": 10
                 }
             ]
@@ -381,6 +861,246 @@
                     "correctAnswer": 2,
                     "explanation": "Adão foi o primeiro homem criado por Deus (Gênesis 2:7).",
                     "points": 10
+                },
+                {
+                    "question": "Quem foi a primeira mulher do mundo?",
+                    "options": [
+                        "Eva",
+                        "Sara",
+                        "Maria",
+                        "Rebeca"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "Eva foi a primeira mulher, criada por Deus como companheira de Adão (Gênesis 2:22).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o primeiro rei de Israel unificado?",
+                    "options": [
+                        "Davi",
+                        "Saul",
+                        "Salomão",
+                        "Jessé"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Saul foi o primeiro rei de Israel, ungido pelo profeta Samuel (1 Samuel 10:1).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual profeta foi levado ao céu em uma carruagem de fogo?",
+                    "options": [
+                        "Eliseu",
+                        "Elias",
+                        "Isaías",
+                        "Ezequiel"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Elias foi levado ao céu em uma carruagem de fogo (2 Reis 2:11).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o homem mais sábio da Bíblia?",
+                    "options": [
+                        "Davi",
+                        "Moisés",
+                        "Salomão",
+                        "Daniel"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Salomão foi considerado o homem mais sábio, tendo pedido sabedoria a Deus (1 Reis 3:9-12).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi vendido como escravo por seus próprios irmãos?",
+                    "options": [
+                        "Benjamim",
+                        "José",
+                        "Judá",
+                        "Rúben"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "José foi vendido como escravo por seus irmãos por inveja (Gênesis 37:28).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o rei que derrotou o gigante Golias?",
+                    "options": [
+                        "Saul",
+                        "Davi",
+                        "Sansão",
+                        "Josué"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Davi derrotou o gigante Golias quando era jovem (1 Samuel 17:50).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi a primeira rainha de Israel?",
+                    "options": [
+                        "Jezabel",
+                        "Ester",
+                        "Atalia",
+                        "Maria"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Atalia foi a primeira e única rainha que reinou sobre Judá (2 Reis 11:1-3).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem era o profeta conhecido por sua força?",
+                    "options": [
+                        "Samuel",
+                        "Elias",
+                        "Sansão",
+                        "Daniel"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Sansão era conhecido por sua força extraordinária (Juízes 13-16).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o rei que construiu o Templo de Salomão?",
+                    "options": [
+                        "Davi",
+                        "Ezequias",
+                        "Salomão",
+                        "Josias"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Salomão construiu o Templo de Jerusalém (1 Reis 6-7).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o rei que restaurou o culto a Deus em Judá?",
+                    "options": [
+                        "Acabe",
+                        "Ezequias",
+                        "Manassés",
+                        "Roboão"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Ezequias realizou uma grande reforma religiosa em Judá (2 Crônicas 29-31).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o último juiz de Israel?",
+                    "options": [
+                        "Sansão",
+                        "Gideão",
+                        "Samuel",
+                        "Eli"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Samuel foi o último juiz de Israel antes da instituição da monarquia (1 Samuel 7:15-17).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o primeiro mártir cristão?",
+                    "options": [
+                        "Pedro",
+                        "Tiago",
+                        "Estêvão",
+                        "Paulo"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Estêvão foi o primeiro mártir cristão, apedrejado por sua fé (Atos 7:54-60).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o rei que viveu como animal por sete anos?",
+                    "options": [
+                        "Saul",
+                        "Nabucodonosor",
+                        "Davi",
+                        "Salomão"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Nabucodonosor foi castigado por Deus e viveu como animal por sete anos (Daniel 4:28-33).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o profeta que pregou para os ninivitas?",
+                    "options": [
+                        "Jeremias",
+                        "Daniel",
+                        "Isaías",
+                        "Jonas"
+                    ],
+                    "correctAnswer": 3,
+                    "explanation": "Jonas foi enviado por Deus para pregar em Nínive (Livro de Jonas).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o rei que recebeu o sonho da estátua de vários metais?",
+                    "options": [
+                        "Dario",
+                        "Ciro",
+                        "Nabucodonosor",
+                        "Assuero"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Nabucodonosor recebeu o sonho da estátua interpretado por Daniel (Daniel 2).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o rei que escreveu a maioria dos Provérbios?",
+                    "options": [
+                        "Davi",
+                        "Ezequias",
+                        "Salomão",
+                        "Josias"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Salomão é tradicionalmente creditado como o principal autor dos Provérbios (Provérbios 1:1).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem era o espião que ajudou os israelitas em Jericó?",
+                    "options": [
+                        "Raabe",
+                        "Débora",
+                        "Rute",
+                        "Ester"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "Raabe escondeu os espiões israelitas e foi posteriormente salva (Josué 2).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o rei que derrotou os midianitas com 300 homens?",
+                    "options": [
+                        "Davi",
+                        "Saul",
+                        "Gideão",
+                        "Josué"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Gideão derrotou os midianitas com apenas 300 homens (Juízes 7).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o rei que construiu os muros de Jerusalém?",
+                    "options": [
+                        "Davi",
+                        "Salomão",
+                        "Neemias",
+                        "Ezras"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Neemias liderou a reconstrução dos muros de Jerusalém (Livro de Neemias).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o rei que teve sua alma pesada na balança?",
+                    "options": [
+                        "Saul",
+                        "Davi",
+                        "Belsazar",
+                        "Acabe"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Belsazar teve sua alma pesada e achada em falta na famosa passagem de Daniel (Daniel 5:27).",
+                    "points": 10
                 }
             ]
         },
@@ -508,6 +1228,90 @@
                     ],
                     "correctAnswer": 2,
                     "explanation": "'Lâmpada para os meus pés é a tua palavra e luz para o meu caminho.' (Salmos 119:105)",
+                    "points": 10
+                },
+                {
+                    "question": "Complete: 'A palavra de Deus é viva e...'",
+                    "options": [
+                        "poderosa",
+                        "eficaz",
+                        "verdadeira",
+                        "eterna"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "'A palavra de Deus é viva e eficaz, e mais cortante do que qualquer espada de dois gumes.' (Hebreus 4:12)",
+                    "points": 10
+                },
+                {
+                    "question": "Complete: 'Porque a letra mata, mas o...'",
+                    "options": [
+                        "espírito vivifica",
+                        "amor perdoa",
+                        "perdão restaura",
+                        "arrependimento salva"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "'Porque a letra mata, mas o espírito vivifica.' (2 Coríntios 3:6)",
+                    "points": 10
+                },
+                {
+                    "question": "Complete: 'Onde estiver o vosso tesouro, aí estará também...'",
+                    "options": [
+                        "vosso coração",
+                        "vossa mente",
+                        "vossa alma",
+                        "vossa força"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "'Onde estiver o vosso tesouro, aí estará também o vosso coração.' (Mateus 6:21)",
+                    "points": 10
+                },
+                {
+                    "question": "Complete: 'Eu sou a luz do mundo; quem me segue...'",
+                    "options": [
+                        "será abençoado",
+                        "não andará em trevas",
+                        "será salvo",
+                        "receberá graça"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "'Eu sou a luz do mundo; quem me segue não andará em trevas, mas terá a luz da vida.' (João 8:12)",
+                    "points": 10
+                },
+                {
+                    "question": "Complete: 'A graça do Senhor...'",
+                    "options": [
+                        "é infinita",
+                        "é para sempre",
+                        "nos basta",
+                        "nos sustenta"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "'A minha graça te basta, porque o meu poder se aperfeiçoa na fraqueza.' (2 Coríntios 12:9)",
+                    "points": 10
+                },
+                {
+                    "question": "Complete: 'O amor é...'",
+                    "options": [
+                        "paciente e bondoso",
+                        "forte e durável",
+                        "perfeito e eterno",
+                        "incondicional e puro"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "'O amor é paciente, o amor é bondoso...' (1 Coríntios 13:4)",
+                    "points": 10
+                },
+                {
+                    "question": "Complete: 'Se alguém está em Cristo, é...'",
+                    "options": [
+                        "salvo",
+                        "nova criatura",
+                        "transformado",
+                        "perfeito"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "'Se alguém está em Cristo, é nova criatura; as coisas antigas já passaram; eis que tudo se fez novo.' (2 Coríntios 5:17)",
                     "points": 10
                 }
             ]
@@ -637,7 +1441,127 @@
                     "correctAnswer": 0,
                     "explanation": "A Parábola do Fariseu e do Publicano ensina sobre humildade (Lucas 18:9-14).",
                     "points": 10
-                }
+                },
+            {
+                "question": "Qual parábola Jesus contou sobre a importância da reconciliação?",
+                "options": [
+                    "Parábola do Servo Impiedoso",
+                    "Parábola do Bom Samaritano",
+                    "Parábola do Filho Pródigo",
+                    "Parábola do Mordomo Infiel"
+                ],
+                "correctAnswer": 0,
+                "explanation": "A Parábola do Servo Impiedoso ensina sobre a importância do perdão e da reconciliação (Mateus 18:21-35).",
+                "points": 10
+            },
+            {
+                "question": "Qual parábola Jesus usou para ensinar sobre a generosidade de Deus?",
+                "options": [
+                    "Parábola do Trabalhadores da Vinha",
+                    "Parábola dos Talentos",
+                    "Parábola do Mordomo Infiel",
+                    "Parábola do Rico Insensato"
+                ],
+                "correctAnswer": 0,
+                "explanation": "A Parábola dos Trabalhadores da Vinha ilustra a generosidade de Deus que não depende do tempo de serviço (Mateus 20:1-16).",
+                "points": 10
+            },
+            {
+                "question": "Qual parábola Jesus contou para mostrar o valor do Reino de Deus?",
+                "options": [
+                    "Parábola do Tesouro Escondido",
+                    "Parábola da Pérola de Grande Valor",
+                    "Parábola do Semeador",
+                    "Parábola do Fermento"
+                ],
+                "correctAnswer": 1,
+                "explanation": "A Parábola da Pérola de Grande Valor ilustra o valor supremo do Reino de Deus (Mateus 13:45-46).",
+                "points": 10
+            },
+            {
+                "question": "Qual parábola Jesus usou para ensinar sobre a gestão responsável?",
+                "options": [
+                    "Parábola do Mordomo Infiel",
+                    "Parábola dos Talentos",
+                    "Parábola do Rico Insensato",
+                    "Parábola do Servo Fiel e Infiel"
+                ],
+                "correctAnswer": 0,
+                "explanation": "A Parábola do Mordomo Infiel ensina sobre a responsabilidade na gestão dos recursos (Lucas 16:1-13).",
+                "points": 10
+            },
+            {
+                "question": "Qual parábola Jesus contou sobre a importância de estar preparado?",
+                "options": [
+                    "Parábola do Servo Fiel e Infiel",
+                    "Parábola das Dez Virgens",
+                    "Parábola do Semeador",
+                    "Parábola do Mordomo Infiel"
+                ],
+                "correctAnswer": 1,
+                "explanation": "A Parábola das Dez Virgens ensina sobre a importância de estar espiritualmente preparado (Mateus 25:1-13).",
+                "points": 10
+            },
+            {
+                "question": "Qual parábola Jesus contou sobre a importância da reconciliação?",
+                "options": [
+                    "Parábola do Servo Impiedoso",
+                    "Parábola do Bom Samaritano",
+                    "Parábola do Filho Pródigo",
+                    "Parábola do Mordomo Infiel"
+                ],
+                "correctAnswer": 0,
+                "explanation": "A Parábola do Servo Impiedoso ensina sobre a importância do perdão e da reconciliação (Mateus 18:21-35).",
+                "points": 10
+            },
+            {
+                "question": "Qual parábola Jesus usou para ensinar sobre a generosidade de Deus?",
+                "options": [
+                    "Parábola do Trabalhadores da Vinha",
+                    "Parábola dos Talentos",
+                    "Parábola do Mordomo Infiel",
+                    "Parábola do Rico Insensato"
+                ],
+                "correctAnswer": 0,
+                "explanation": "A Parábola dos Trabalhadores da Vinha ilustra a generosidade de Deus que não depende do tempo de serviço (Mateus 20:1-16).",
+                "points": 10
+            },
+            {
+                "question": "Qual parábola Jesus contou para mostrar o valor do Reino de Deus?",
+                "options": [
+                    "Parábola do Tesouro Escondido",
+                    "Parábola da Pérola de Grande Valor",
+                    "Parábola do Semeador",
+                    "Parábola do Fermento"
+                ],
+                "correctAnswer": 1,
+                "explanation": "A Parábola da Pérola de Grande Valor ilustra o valor supremo do Reino de Deus (Mateus 13:45-46).",
+                "points": 10
+            },
+            {
+                "question": "Qual parábola Jesus usou para ensinar sobre a gestão responsável?",
+                "options": [
+                    "Parábola do Mordomo Infiel",
+                    "Parábola dos Talentos",
+                    "Parábola do Rico Insensato",
+                    "Parábola do Servo Fiel e Infiel"
+                ],
+                "correctAnswer": 0,
+                "explanation": "A Parábola do Mordomo Infiel ensina sobre a responsabilidade na gestão dos recursos (Lucas 16:1-13).",
+                "points": 10
+            },
+            {
+                "question": "Qual parábola Jesus contou sobre a importância de estar preparado?",
+                "options": [
+                    "Parábola do Servo Fiel e Infiel",
+                    "Parábola das Dez Virgens",
+                    "Parábola do Semeador",
+                    "Parábola do Mordomo Infiel"
+                ],
+                "correctAnswer": 1,
+                "explanation": "A Parábola das Dez Virgens ensina sobre a importância de estar espiritualmente preparado (Mateus 25:1-13).",
+                "points": 10
+            }
             ]
         }
     ]
