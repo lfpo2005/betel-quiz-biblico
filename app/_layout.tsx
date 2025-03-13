@@ -1,45 +1,18 @@
-// app/(tabs)/_layout.tsx
-import { Tabs } from 'expo-router';
+// app/_layout.tsx
 import React from 'react';
-import { Feather } from '@expo/vector-icons';
-import { Colors } from '@/constants/Colors';
-import { useColorScheme } from '@/hooks/useColorScheme';
+import { Stack } from 'expo-router';
+import { StatusBar } from 'expo-status-bar';
 
-export default function TabLayout() {
-  const colorScheme = useColorScheme();
-
+export default function RootLayout() {
   return (
-    <Tabs
-      screenOptions={{
-        tabBarActiveTintColor: Colors[colorScheme ?? 'light'].tint,
-        headerShown: false,
-        tabBarStyle: {
-          borderTopWidth: 1,
-          borderTopColor: Colors[colorScheme ?? 'light'].tabIconDefault,
-          backgroundColor: Colors[colorScheme ?? 'light'].background,
-        },
-      }}>
-      <Tabs.Screen
-        name="index"
-        options={{
-          title: 'Início',
-          tabBarIcon: ({ color }) => <Feather name="home" size={24} color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="categories"
-        options={{
-          title: 'Categorias',
-          tabBarIcon: ({ color }) => <Feather name="grid" size={24} color={color} />,
-        }}
-      />
-      <Tabs.Screen
-        name="profile"
-        options={{
-          title: 'Perfil',
-          tabBarIcon: ({ color }) => <Feather name="user" size={24} color={color} />,
-        }}
-      />
-    </Tabs>
+    <>
+      <Stack>
+        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+        <Stack.Screen name="quiz" options={{ headerShown: false }} />
+        <Stack.Screen name="result" options={{ headerShown: false }} />
+        <Stack.Screen name="+not-found" options={{ title: 'Página não encontrada' }} />
+      </Stack>
+      <StatusBar style="auto" />
+    </>
   );
 }
