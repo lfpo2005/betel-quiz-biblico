@@ -28,7 +28,7 @@
       "package": "com.betel.quizbiblico"
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/images/favicon.png"
     }
   }
 }

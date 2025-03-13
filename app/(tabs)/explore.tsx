@@ -1,109 +1,121 @@
-import { StyleSheet, Image, Platform } from 'react-native';
+import React from 'react';
+import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native';
+import { Feather } from '@expo/vector-icons';
 
-import { Collapsible } from '@/components/Collapsible';
-import { ExternalLink } from '@/components/ExternalLink';
-import ParallaxScrollView from '@/components/ParallaxScrollView';
-import { ThemedText } from '@/components/ThemedText';
-import { ThemedView } from '@/components/ThemedView';
-import { IconSymbol } from '@/components/ui/IconSymbol';
+// Componente simples para substituir o Collapsible
+const SimpleCollapsible = ({ title, children }) => {
+  const [expanded, setExpanded] = React.useState(false);
 
-export default function TabTwoScreen() {
   return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
-      headerImage={
-        <IconSymbol
-          size={310}
-          color="#808080"
-          name="chevron.left.forwardslash.chevron.right"
-          style={styles.headerImage}
+    <View style={styles.collapsible}>
+      <TouchableOpacity
+        style={styles.collapsibleHeader}
+        onPress={() => setExpanded(!expanded)}
+      >
+        <Text style={styles.collapsibleTitle}>{title}</Text>
+        <Feather
+          name={expanded ? "chevron-up" : "chevron-down"}
+          size={20}
+          color="#4B7BEC"
         />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Explore</ThemedText>
-      </ThemedView>
-      <ThemedText>This app includes example code to help you get started.</ThemedText>
-      <Collapsible title="File-based routing">
-        <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
-        </ThemedText>
-        <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/router/introduction">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Android, iOS, and web support">
-        <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the web version, press{' '}
-          <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
-        </ThemedText>
-      </Collapsible>
-      <Collapsible title="Images">
-        <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
-        </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
-        <ExternalLink href="https://reactnative.dev/docs/images">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Custom fonts">
-        <ThemedText>
-          Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
-          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
-          </ThemedText>
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Light and dark mode components">
-        <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user's current color scheme is, and so you can adjust UI colors accordingly.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Animations">
-        <ThemedText>
-          This template includes an example of an animated component. The{' '}
-          <ThemedText type="defaultSemiBold">components/HelloWave.tsx</ThemedText> component uses
-          the powerful <ThemedText type="defaultSemiBold">react-native-reanimated</ThemedText>{' '}
-          library to create a waving hand animation.
-        </ThemedText>
-        {Platform.select({
-          ios: (
-            <ThemedText>
-              The <ThemedText type="defaultSemiBold">components/ParallaxScrollView.tsx</ThemedText>{' '}
-              component provides a parallax effect for the header image.
-            </ThemedText>
-          ),
-        })}
-      </Collapsible>
-    </ParallaxScrollView>
+      </TouchableOpacity>
+
+      {expanded && (
+        <View style={styles.collapsibleContent}>
+          {children}
+        </View>
+      )}
+    </View>
+  );
+};
+
+export default function ExploreScreen() {
+  return (
+    <ScrollView style={styles.container}>
+      <View style={styles.header}>
+        <Text style={styles.title}>Explore</Text>
+        <Text style={styles.subtitle}>Descubra mais sobre o Quiz Bíblico</Text>
+      </View>
+
+      <SimpleCollapsible title="Sobre o Quiz">
+        <Text style={styles.text}>
+          Este aplicativo contém perguntas sobre diferentes temas bíblicos.
+          Teste seus conhecimentos e aumente sua pontuação!
+        </Text>
+      </SimpleCollapsible>
+
+      <SimpleCollapsible title="Como Jogar">
+        <Text style={styles.text}>
+          Selecione uma categoria, responda as perguntas dentro do tempo limite
+          e veja quantos pontos consegue fazer!
+        </Text>
+      </SimpleCollapsible>
+
+      <SimpleCollapsible title="Dicas">
+        <Text style={styles.text}>
+          - Leia atentamente cada pergunta
+          {'\n'}- Pense bem antes de responder
+          {'\n'}- Estude a Bíblia regularmente para melhorar seu desempenho
+        </Text>
+      </SimpleCollapsible>
+
+      <SimpleCollapsible title="Versículos Diários">
+        <Text style={styles.text}>
+          "Lâmpada para os meus pés é a tua palavra e luz para o meu caminho."
+          {'\n\n'}Salmos 119:105
+        </Text>
+      </SimpleCollapsible>
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
-  headerImage: {
-    color: '#808080',
-    bottom: -90,
-    left: -35,
-    position: 'absolute',
+  container: {
+    flex: 1,
+    backgroundColor: '#F7F9FC',
   },
-  titleContainer: {
+  header: {
+    padding: 20,
+    paddingTop: 50,
+    backgroundColor: '#4B7BEC',
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: 'white',
+  },
+  subtitle: {
+    fontSize: 16,
+    color: 'rgba(255, 255, 255, 0.8)',
+    marginTop: 5,
+  },
+  collapsible: {
+    margin: 10,
+    borderRadius: 10,
+    backgroundColor: 'white',
+    overflow: 'hidden',
+    borderWidth: 1,
+    borderColor: '#EAEAEA',
+  },
+  collapsibleHeader: {
+    padding: 15,
     flexDirection: 'row',
-    gap: 8,
+    justifyContent: 'space-between',
+    alignItems: 'center',
+  },
+  collapsibleTitle: {
+    fontSize: 16,
+    fontWeight: 'bold',
+    color: '#2D3436',
+  },
+  collapsibleContent: {
+    padding: 15,
+    borderTopWidth: 1,
+    borderTopColor: '#EAEAEA',
+  },
+  text: {
+    fontSize: 14,
+    color: '#636E72',
+    lineHeight: 20,
   },
 });
