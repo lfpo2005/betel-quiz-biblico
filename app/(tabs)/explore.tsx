@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { StyleSheet, Text, View, ScrollView, TouchableOpacity } from 'react-native';
 import { Feather } from '@expo/vector-icons';
+import verses from '@/data/verses.json';
 
 // Componente simples para substituir o Collapsible
 const SimpleCollapsible = ({ title, children }) => {
@@ -30,6 +31,15 @@ const SimpleCollapsible = ({ title, children }) => {
 };
 
 export default function ExploreScreen() {
+  const today = new Date();
+
+  const [dailyVerse, setDailyVerse] = useState(verses[0]);
+
+  const generateNewVerse = () => {
+    const randomIndex = Math.floor(Math.random() * verses.length);
+    setDailyVerse(verses[randomIndex]);
+  };
+
   return (
     <ScrollView style={styles.container}>
       <View style={styles.header}>
@@ -61,9 +71,12 @@ export default function ExploreScreen() {
 
       <SimpleCollapsible title="Versículos Diários">
         <Text style={styles.text}>
-          "Lâmpada para os meus pés é a tua palavra e luz para o meu caminho."
-          {'\n\n'}Salmos 119:105
+          "{dailyVerse.text}"
+          {'\n\n'}{dailyVerse.reference}
         </Text>
+        <TouchableOpacity style={styles.newVerseButton} onPress={generateNewVerse}>
+          <Text style={styles.newVerseButtonText}>Gerar novo versículo</Text>
+        </TouchableOpacity>
       </SimpleCollapsible>
     </ScrollView>
   );
@@ -117,5 +130,17 @@ const styles = StyleSheet.create({
     fontSize: 14,
     color: '#636E72',
     lineHeight: 20,
+  },
+  newVerseButton: {
+    backgroundColor: '#4B7BEC',
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    borderRadius: 8,
+    marginTop: 10,
+    alignSelf: 'flex-start',
+  },
+  newVerseButtonText: {
+    color: 'white',
+    fontWeight: 'bold',
   },
 });

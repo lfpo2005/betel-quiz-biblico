@@ -5,10 +5,13 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Feather } from '@expo/vector-icons';
 import { router } from 'expo-router';
 import Button from '@/components/Button';
+import verses from '@/data/verses.json';
 
 export default function HomeScreen() {
   const [totalScore, setTotalScore] = useState(0);
   const [name, setName] = useState('');
+  const randomVerse = verses[Math.floor(Math.random() * verses.length)];
+
 
   useEffect(() => {
     loadData();
@@ -68,7 +71,7 @@ export default function HomeScreen() {
 
       <View style={styles.footer}>
         <Text style={styles.footerText}>
-          "Lâmpada para os meus pés é a tua palavra e luz para o meu caminho."
+         "{randomVerse.text}"
         </Text>
         <Text style={styles.footerVerse}>Salmos 119:105</Text>
       </View>
