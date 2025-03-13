@@ -1,0 +1,645 @@
+// data/questions.json
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "Antigo Testamento",
+            "icon": "book",
+            "color": "#4B7BEC",
+            "questions": [
+                {
+                    "question": "Quem construiu a arca?",
+                    "options": [
+                        "Abraão",
+                        "Moisés",
+                        "Noé",
+                        "Davi"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Noé construiu a arca conforme Deus ordenou (Gênesis 6:14-22).",
+                    "points": 10
+                },
+                {
+                    "question": "Quantos livros tem o Antigo Testamento?",
+                    "options": [
+                        "27",
+                        "39",
+                        "46",
+                        "66"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "O Antigo Testamento possui 39 livros.",
+                    "points": 10
+                },
+                {
+                    "question": "Qual foi a décima praga do Egito?",
+                    "options": [
+                        "Trevas",
+                        "Piolhos",
+                        "Morte dos primogênitos",
+                        "Rãs"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "A morte dos primogênitos foi a décima e última praga (Êxodo 12:29-30).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi levado ao céu em um redemoinho?",
+                    "options": [
+                        "Moisés",
+                        "Elias",
+                        "Enoque",
+                        "Ezequiel"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Elias foi levado ao céu em um redemoinho (2 Reis 2:11).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem era o pai de Davi?",
+                    "options": [
+                        "Saul",
+                        "Jessé",
+                        "Samuel",
+                        "Jonatas"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Jessé era o pai de Davi (1 Samuel 16:1).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual era o nome da mulher de Abraão?",
+                    "options": [
+                        "Rebeca",
+                        "Raquel",
+                        "Sara",
+                        "Lia"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Sara era a esposa de Abraão (Gênesis 17:15).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem interpretou o sonho do Faraó sobre as vacas magras e gordas?",
+                    "options": [
+                        "José",
+                        "Daniel",
+                        "Moisés",
+                        "Jacó"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "José interpretou o sonho do Faraó (Gênesis 41:25-36).",
+                    "points": 10
+                },
+                {
+                    "question": "Quantos dias e noites durou o dilúvio?",
+                    "options": [
+                        "7 dias",
+                        "40 dias e 40 noites",
+                        "100 dias",
+                        "1 ano"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "O dilúvio durou 40 dias e 40 noites (Gênesis 7:12).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi lançado na cova dos leões?",
+                    "options": [
+                        "Davi",
+                        "Jonas",
+                        "Daniel",
+                        "Jeremias"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Daniel foi lançado na cova dos leões (Daniel 6:16).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual foi o monte onde Moisés recebeu os Dez Mandamentos?",
+                    "options": [
+                        "Carmelo",
+                        "Sinai",
+                        "Moriá",
+                        "Tabor"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Moisés recebeu os Dez Mandamentos no Monte Sinai (Êxodo 19:20).",
+                    "points": 10
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Novo Testamento",
+            "icon": "bookmark",
+            "color": "#26DE81",
+            "questions": [
+                {
+                    "question": "Quem escreveu mais livros do Novo Testamento?",
+                    "options": [
+                        "João",
+                        "Mateus",
+                        "Lucas",
+                        "Paulo"
+                    ],
+                    "correctAnswer": 3,
+                    "explanation": "O apóstolo Paulo escreveu 13 livros do Novo Testamento.",
+                    "points": 10
+                },
+                {
+                    "question": "Quantos apóstolos Jesus escolheu?",
+                    "options": [
+                        "10",
+                        "12",
+                        "14",
+                        "7"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Jesus escolheu 12 apóstolos (Mateus 10:1-4).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem negou Jesus três vezes?",
+                    "options": [
+                        "João",
+                        "Pedro",
+                        "Judas",
+                        "Tomé"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Pedro negou Jesus três vezes (Mateus 26:69-75).",
+                    "points": 10
+                },
+                {
+                    "question": "Em qual cidade Jesus nasceu?",
+                    "options": [
+                        "Nazaré",
+                        "Jerusalém",
+                        "Belém",
+                        "Jericó"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Jesus nasceu em Belém (Mateus 2:1).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem batizou Jesus?",
+                    "options": [
+                        "Pedro",
+                        "José",
+                        "João Batista",
+                        "Filipe"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "João Batista batizou Jesus (Mateus 3:13-17).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual foi o primeiro milagre de Jesus?",
+                    "options": [
+                        "Multiplicação dos pães",
+                        "Cura de um leproso",
+                        "Transformar água em vinho",
+                        "Andar sobre as águas"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "O primeiro milagre de Jesus foi transformar água em vinho nas Bodas de Caná (João 2:1-11).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual livro vem depois dos quatro evangelhos?",
+                    "options": [
+                        "Romanos",
+                        "Atos dos Apóstolos",
+                        "Apocalipse",
+                        "1 Coríntios"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Atos dos Apóstolos vem logo após os quatro evangelhos.",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o primeiro mártir cristão mencionado no Novo Testamento?",
+                    "options": [
+                        "Pedro",
+                        "Paulo",
+                        "Estêvão",
+                        "Tiago"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Estêvão foi o primeiro mártir cristão (Atos 7:54-60).",
+                    "points": 10
+                },
+                {
+                    "question": "O que significa a palavra 'evangelho'?",
+                    "options": [
+                        "Palavra de Deus",
+                        "Boas novas",
+                        "Salvação",
+                        "Caminho"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Evangelho significa 'boas novas' ou 'boas notícias'.",
+                    "points": 10
+                },
+                {
+                    "question": "Qual cidade Paulo estava a caminho quando teve seu encontro com Jesus?",
+                    "options": [
+                        "Jerusalém",
+                        "Atenas",
+                        "Damasco",
+                        "Roma"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Paulo estava a caminho de Damasco quando teve seu encontro com Jesus (Atos 9:1-6).",
+                    "points": 10
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Personagens Bíblicos",
+            "icon": "users",
+            "color": "#FFA502",
+            "questions": [
+                {
+                    "question": "Quem foi o homem mais forte da Bíblia?",
+                    "options": [
+                        "Davi",
+                        "Golias",
+                        "Sansão",
+                        "Saul"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Sansão é conhecido como o homem mais forte da Bíblia (Juízes 13-16).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi jogado em um poço por seus irmãos?",
+                    "options": [
+                        "José",
+                        "Benjamim",
+                        "Abraão",
+                        "Isaque"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "José foi jogado em um poço por seus irmãos invejosos (Gênesis 37:24).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem era a esposa de Isaque?",
+                    "options": [
+                        "Sara",
+                        "Rebeca",
+                        "Raquel",
+                        "Lia"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Rebeca era a esposa de Isaque (Gênesis 24:67).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem construiu o Templo de Jerusalém?",
+                    "options": [
+                        "Davi",
+                        "Salomão",
+                        "Saul",
+                        "Josias"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Salomão construiu o Templo de Jerusalém (1 Reis 6).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi engolido por um grande peixe?",
+                    "options": [
+                        "Pedro",
+                        "Daniel",
+                        "Jonas",
+                        "Elias"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Jonas foi engolido por um grande peixe (Jonas 1:17).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem era o discípulo a quem Jesus amava?",
+                    "options": [
+                        "Pedro",
+                        "João",
+                        "Tiago",
+                        "André"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "João é frequentemente referido como 'o discípulo a quem Jesus amava' (João 13:23).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem era o rei quando Jesus nasceu?",
+                    "options": [
+                        "César Augusto",
+                        "Herodes",
+                        "Pilatos",
+                        "Nero"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Herodes era o rei quando Jesus nasceu (Mateus 2:1).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem traiu Jesus por 30 moedas de prata?",
+                    "options": [
+                        "Pedro",
+                        "Tomé",
+                        "Judas Iscariotes",
+                        "Barrabás"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Judas Iscariotes traiu Jesus por 30 moedas de prata (Mateus 26:14-16).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem era o sumo sacerdote durante o julgamento de Jesus?",
+                    "options": [
+                        "Anás",
+                        "Caifás",
+                        "Herodes",
+                        "Pilatos"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Caifás era o sumo sacerdote durante o julgamento de Jesus (Mateus 26:57).",
+                    "points": 10
+                },
+                {
+                    "question": "Quem foi o primeiro homem criado por Deus?",
+                    "options": [
+                        "Noé",
+                        "Abel",
+                        "Adão",
+                        "Abraão"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "Adão foi o primeiro homem criado por Deus (Gênesis 2:7).",
+                    "points": 10
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Versículos Populares",
+            "icon": "star",
+            "color": "#FF6B6B",
+            "questions": [
+                {
+                    "question": "Complete: 'Porque Deus amou o mundo de tal maneira que deu o seu...'",
+                    "options": [
+                        "único poder",
+                        "Filho unigênito",
+                        "Santo Espírito",
+                        "caminho de salvação"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "'Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna.' (João 3:16)",
+                    "points": 10
+                },
+                {
+                    "question": "Complete: 'Tudo posso naquele que me...'",
+                    "options": [
+                        "ama",
+                        "guia",
+                        "fortalece",
+                        "salva"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "'Tudo posso naquele que me fortalece.' (Filipenses 4:13)",
+                    "points": 10
+                },
+                {
+                    "question": "Complete: 'O Senhor é o meu pastor e...'",
+                    "options": [
+                        "nada me faltará",
+                        "me guiará",
+                        "me salvará",
+                        "me protegerá"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "'O Senhor é o meu pastor e nada me faltará.' (Salmos 23:1)",
+                    "points": 10
+                },
+                {
+                    "question": "Complete: 'No princípio, criou Deus...'",
+                    "options": [
+                        "a luz",
+                        "o homem",
+                        "os céus e a terra",
+                        "os animais"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "'No princípio, criou Deus os céus e a terra.' (Gênesis 1:1)",
+                    "points": 10
+                },
+                {
+                    "question": "Complete: 'Bem-aventurados os..., porque verão a Deus.'",
+                    "options": [
+                        "mansos",
+                        "misericordiosos",
+                        "pacificadores",
+                        "limpos de coração"
+                    ],
+                    "correctAnswer": 3,
+                    "explanation": "'Bem-aventurados os limpos de coração, porque verão a Deus.' (Mateus 5:8)",
+                    "points": 10
+                },
+                {
+                    "question": "Complete: 'E conhecereis a verdade, e a verdade...'",
+                    "options": [
+                        "vos guiará",
+                        "vos libertará",
+                        "permanecerá em vós",
+                        "vos santificará"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "'E conhecereis a verdade, e a verdade vos libertará.' (João 8:32)",
+                    "points": 10
+                },
+                {
+                    "question": "Complete: 'Respondeu-lhe Jesus: Eu sou o caminho, e a verdade, e a vida; ninguém vem ao Pai...'",
+                    "options": [
+                        "se não por mim",
+                        "senão pela fé",
+                        "sem arrependimento",
+                        "se não pela oração"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "'Respondeu-lhe Jesus: Eu sou o caminho, e a verdade, e a vida; ninguém vem ao Pai se não por mim.' (João 14:6)",
+                    "points": 10
+                },
+                {
+                    "question": "Complete: 'Não to mandei eu? Esforça-te, e tem bom ânimo; não te...'",
+                    "options": [
+                        "desanimes",
+                        "afastes",
+                        "assustes",
+                        "atemorizes"
+                    ],
+                    "correctAnswer": 3,
+                    "explanation": "'Não to mandei eu? Esforça-te, e tem bom ânimo; não te atemorizes, nem te espantes; porque o Senhor, teu Deus, é contigo.' (Josué 1:9)",
+                    "points": 10
+                },
+                {
+                    "question": "Complete: 'Amarás o Senhor, teu Deus, de todo o teu coração, de toda a tua alma e...'",
+                    "options": [
+                        "de toda a tua mente",
+                        "de toda a tua força",
+                        "de todo o teu entendimento",
+                        "de todo o teu espírito"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "'Amarás o Senhor, teu Deus, de todo o teu coração, de toda a tua alma e de toda a tua mente.' (Mateus 22:37)",
+                    "points": 10
+                },
+                {
+                    "question": "Complete: 'Lâmpada para os meus pés é a tua palavra e...'",
+                    "options": [
+                        "guia para os meus caminhos",
+                        "luz para os meus olhos",
+                        "luz para o meu caminho",
+                        "salvação para a minha alma"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "'Lâmpada para os meus pés é a tua palavra e luz para o meu caminho.' (Salmos 119:105)",
+                    "points": 10
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "Parábolas de Jesus",
+            "icon": "message-circle",
+            "color": "#A55EEA",
+            "questions": [
+                {
+                    "question": "Em qual parábola Jesus fala sobre um filho que pediu sua herança e desperdiçou tudo?",
+                    "options": [
+                        "Parábola do Semeador",
+                        "Parábola do Bom Samaritano",
+                        "Parábola do Filho Pródigo",
+                        "Parábola dos Talentos"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "A Parábola do Filho Pródigo está em Lucas 15:11-32.",
+                    "points": 10
+                },
+                {
+                    "question": "Qual parábola ensina sobre as diferentes reações das pessoas à Palavra de Deus?",
+                    "options": [
+                        "Parábola do Bom Pastor",
+                        "Parábola do Semeador",
+                        "Parábola da Ovelha Perdida",
+                        "Parábola do Fariseu e o Publicano"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "A Parábola do Semeador está em Mateus 13:1-23.",
+                    "points": 10
+                },
+                {
+                    "question": "Na Parábola do Bom Samaritano, quem passou pelo homem ferido e não o ajudou?",
+                    "options": [
+                        "Um samaritano e um levita",
+                        "Um sacerdote e um levita",
+                        "Um fariseu e um saduceu",
+                        "Um escriba e um fariseu"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Na Parábola do Bom Samaritano, um sacerdote e um levita passaram pelo homem ferido e não o ajudaram (Lucas 10:30-37).",
+                    "points": 10
+                },
+                {
+                    "question": "Na Parábola dos Talentos, o que o servo que recebeu um talento fez com ele?",
+                    "options": [
+                        "Multiplicou-o",
+                        "Deu-o a outro servo",
+                        "Escondeu-o na terra",
+                        "Gastou-o"
+                    ],
+                    "correctAnswer": 2,
+                    "explanation": "O servo que recebeu um talento o escondeu na terra (Mateus 25:18).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual parábola Jesus contou para ensinar sobre a importância do perdão?",
+                    "options": [
+                        "Parábola do Semeador",
+                        "Parábola do Servo Impiedoso",
+                        "Parábola do Filho Pródigo",
+                        "Parábola das Dez Virgens"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "A Parábola do Servo Impiedoso ensina sobre a importância do perdão (Mateus 18:21-35).",
+                    "points": 10
+                },
+                {
+                    "question": "Na Parábola das Dez Virgens, quantas virgens eram prudentes?",
+                    "options": [
+                        "Três",
+                        "Cinco",
+                        "Sete",
+                        "Todas"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Cinco virgens eram prudentes e cinco eram insensatas (Mateus 25:1-13).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual parábola Jesus contou para ensinar sobre a oração persistente?",
+                    "options": [
+                        "Parábola do Juiz Injusto",
+                        "Parábola do Semeador",
+                        "Parábola do Filho Pródigo",
+                        "Parábola do Bom Pastor"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "A Parábola do Juiz Injusto (ou da Viúva Persistente) ensina sobre a oração persistente (Lucas 18:1-8).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual parábola Jesus contou para mostrar quem é o nosso próximo?",
+                    "options": [
+                        "Parábola do Filho Pródigo",
+                        "Parábola do Bom Samaritano",
+                        "Parábola da Ovelha Perdida",
+                        "Parábola dos Trabalhadores da Vinha"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "A Parábola do Bom Samaritano foi contada para mostrar quem é o nosso próximo (Lucas 10:29-37).",
+                    "points": 10
+                },
+                {
+                    "question": "Na Parábola do Rico e Lázaro, o que separava o rico de Lázaro após a morte?",
+                    "options": [
+                        "Um muro",
+                        "Um grande abismo",
+                        "Um rio",
+                        "Uma montanha"
+                    ],
+                    "correctAnswer": 1,
+                    "explanation": "Na Parábola do Rico e Lázaro, havia um grande abismo que separava os dois após a morte (Lucas 16:26).",
+                    "points": 10
+                },
+                {
+                    "question": "Qual parábola Jesus contou para ensinar sobre humildade?",
+                    "options": [
+                        "Parábola do Fariseu e do Publicano",
+                        "Parábola do Filho Pródigo",
+                        "Parábola do Bom Samaritano",
+                        "Parábola do Semeador"
+                    ],
+                    "correctAnswer": 0,
+                    "explanation": "A Parábola do Fariseu e do Publicano ensina sobre humildade (Lucas 18:9-14).",
+                    "points": 10
+                }
+            ]
+        }
+    ]
+}

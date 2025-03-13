@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "Quiz Bíblico",
-    "slug": "quiz-biblico",
+    "name": "Betel Quiz Bíblico",
+    "slug": "betel-quiz-biblico",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -18,14 +18,14 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.seudominio.quizbiblico"
+      "bundleIdentifier": "com.betel.quizbiblico"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#4B7BEC"
       },
-      "package": "com.seudominio.quizbiblico"
+      "package": "com.betel.quizbiblico"
     },
     "web": {
       "favicon": "./assets/favicon.png"
