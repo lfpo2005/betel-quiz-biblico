@@ -6,6 +6,7 @@ import { Feather } from '@expo/vector-icons';
 import { useLocalSearchParams, router } from 'expo-router';
 import OptionButton from '@/components/OptionButton';
 import ProgressBar from '@/components/ProgressBar';
+import SoundService from '@/components/SoundService';
 import Data from '@/data/questions.json';
 
 // Dados de exemplo - substitua pelo seu arquivo questions.json
@@ -38,7 +39,7 @@ const questionsData = {
 
 export default function QuizScreen() {
     const params = useLocalSearchParams();
-    const categoryId = parseInt(params.categoryId?.toString() || 1);
+    const categoryId = parseInt(params.categoryId?.toString() || '1');
 
     const category = Data.categories.find(cat => cat.id === categoryId);
 
@@ -48,8 +49,17 @@ export default function QuizScreen() {
     const [showAnswer, setShowAnswer] = useState(false);
     const [timeLeft, setTimeLeft] = useState(30); // 30 segundos por pergunta
 
+    // Load sound effects when component mounts
+    useEffect(() => {
+        SoundService.loadSounds();
+
+        // Cleanup when unmounting
+        return () => {
+            SoundService.unloadSounds();
+        };
+    }, []);
+
     if (!category) {
-        
         Alert.alert("Erro", "Categoria não encontrada");
         router.back();
         return null; // Retornamos null para não renderizar nada mais
@@ -77,6 +87,8 @@ export default function QuizScreen() {
 
     const handleTimeOut = () => {
         setShowAnswer(true);
+        SoundService.playSound('incorrect'); // Play incorrect sound on timeout
+
         // Aguardar um momento antes de passar para a próxima
         setTimeout(() => {
             goToNextQuestion();
@@ -91,6 +103,9 @@ export default function QuizScreen() {
 
         if (optionIndex === currentQuestion.correctAnswer) {
             setScore(prevScore => prevScore + currentQuestion.points);
+            SoundService.playSound('correct'); // Play correct sound
+        } else {
+            SoundService.playSound('incorrect'); // Play incorrect sound
         }
 
         // Aguardar um momento para mostrar a resposta correta
@@ -107,6 +122,7 @@ export default function QuizScreen() {
             setTimeLeft(30);
         } else {
             // Fim do quiz
+            SoundService.playSound('complete'); // Play completion sound
             saveResults();
         }
     };

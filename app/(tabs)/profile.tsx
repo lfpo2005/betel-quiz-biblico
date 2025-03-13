@@ -1,14 +1,15 @@
 // app/(tabs)/profile.tsx
 import React, { useState, useEffect } from 'react';
-import { StyleSheet, Text, View, TextInput, TouchableOpacity, SafeAreaView, Alert } from 'react-native';
+import { StyleSheet, Text, View, Image, TouchableOpacity, SafeAreaView, Alert } from 'react-native';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { Feather } from '@expo/vector-icons';
+import { router } from 'expo-router';
 import Button from '@/components/Button';
 import ScoreDisplay from '@/components/ScoreDisplay';
+import { getCurrentUser, signOut } from '@/utils/auth';
 
 export default function ProfileScreen() {
-    const [name, setName] = useState('');
-    const [editingName, setEditingName] = useState(false);
+    const [user, setUser] = useState(null);
     const [totalScore, setTotalScore] = useState(0);
     const [quizzesTaken, setQuizzesTaken] = useState(0);
 
@@ -18,11 +19,14 @@ export default function ProfileScreen() {
 
     const loadUserData = async () => {
         try {
-            const storedName = await AsyncStorage.getItem('playerName');
+            // Carregar usuário autenticado
+            const userData = await getCurrentUser();
+            setUser(userData);
+
+            // Carregar dados do jogo
             const storedScore = await AsyncStorage.getItem('totalScore');
             const storedQuizzes = await AsyncStorage.getItem('quizzesTaken');
 
-            if (storedName) setName(storedName);
             if (storedScore) setTotalScore(parseInt(storedScore));
             if (storedQuizzes) setQuizzesTaken(parseInt(storedQuizzes));
         } catch (error) {
@@ -30,20 +34,29 @@ export default function ProfileScreen() {
         }
     };
 
-    const saveName = async () => {
-        if (name.trim() === '') {
-            Alert.alert('Erro', 'O nome não pode estar vazio');
-            return;
-        }
-
-        try {
-            await AsyncStorage.setItem('playerName', name);
-            setEditingName(false);
-            Alert.alert('Sucesso', 'Nome salvo com sucesso!');
-        } catch (error) {
-            console.log('Error saving name', error);
-            Alert.alert('Erro', 'Não foi possível salvar o nome');
-        }
+    const handleLogout = async () => {
+        Alert.alert(
+            'Logout',
+            'Tem certeza que deseja sair?',
+            [
+                {
+                    text: 'Cancelar',
+                    style: 'cancel',
+                },
+                {
+                    text: 'Sair',
+                    onPress: async () => {
+                        try {
+                            await signOut();
+                            router.replace('/login');
+                        } catch (error) {
+                            console.error('Erro ao fazer logout:', error);
+                            Alert.alert('Erro', 'Não foi possível fazer logout');
+                        }
+                    },
+                },
+            ]
+        );
     };
 
     const resetProgress = async () => {
@@ -82,36 +95,18 @@ export default function ProfileScreen() {
             </View>
 
             <View style={styles.profileCard}>
-                <View style={styles.avatar}>
-                    <Feather name="user" size={50} color="#4B7BEC" />
-                </View>
-
-                {editingName ? (
-                    <View style={styles.nameEditContainer}>
-                        <TextInput
-                            style={styles.nameInput}
-                            value={name}
-                            onChangeText={setName}
-                            placeholder="Seu nome"
-                            maxLength={20}
-                        />
-                        <View style={styles.editButtonsRow}>
-                            <TouchableOpacity style={styles.cancelButton} onPress={() => setEditingName(false)}>
-                                <Text style={styles.cancelButtonText}>Cancelar</Text>
-                            </TouchableOpacity>
-                            <TouchableOpacity style={styles.saveButton} onPress={saveName}>
-                                <Text style={styles.saveButtonText}>Salvar</Text>
-                            </TouchableOpacity>
-                        </View>
-                    </View>
+                {user?.pictureUrl ? (
+                    <Image source={{ uri: user.pictureUrl }} style={styles.avatar} />
                 ) : (
-                    <View style={styles.nameContainer}>
-                        <Text style={styles.nameText}>{name}</Text>
-                        <TouchableOpacity style={styles.editButton} onPress={() => setEditingName(true)}>
-                            <Feather name="edit-2" size={18} color="#4B7BEC" />
-                        </TouchableOpacity>
+                    <View style={styles.avatarPlaceholder}>
+                        <Feather name="user" size={50} color="#4B7BEC" />
                     </View>
                 )}
+
+                <View style={styles.nameContainer}>
+                    <Text style={styles.nameText}>{user?.name || 'Usuário'}</Text>
+                    <Text style={styles.emailText}>{user?.email || ''}</Text>
+                </View>
 
                 <View style={styles.statsContainer}>
                     <View style={styles.statItem}>
@@ -132,6 +127,14 @@ export default function ProfileScreen() {
                     icon="refresh-cw"
                     onPress={resetProgress}
                     color="#FF6B6B"
+                />
+
+                <Button
+                    title="Sair da Conta"
+                    icon="log-out"
+                    onPress={handleLogout}
+                    color="#636E72"
+                    style={{ marginTop: 10 }}
                 />
             </View>
 
@@ -172,13 +175,18 @@ const styles = StyleSheet.create({
         width: 100,
         height: 100,
         borderRadius: 50,
+        marginBottom: 15,
+    },
+    avatarPlaceholder: {
+        width: 100,
+        height: 100,
+        borderRadius: 50,
         backgroundColor: '#EBF3FF',
         justifyContent: 'center',
         alignItems: 'center',
         marginBottom: 15,
     },
     nameContainer: {
-        flexDirection: 'row',
         alignItems: 'center',
         marginBottom: 20,
     },
@@ -187,45 +195,10 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#2D3436',
     },
-    editButton: {
-        marginLeft: 10,
-        padding: 5,
-    },
-    nameEditContainer: {
-        width: '100%',
-        marginBottom: 20,
-    },
-    nameInput: {
-        borderWidth: 1,
-        borderColor: '#DFE6E9',
-        borderRadius: 8,
-        padding: 10,
-        fontSize: 16,
-        marginBottom: 10,
-    },
-    editButtonsRow: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-    },
-    cancelButton: {
-        paddingVertical: 8,
-        paddingHorizontal: 15,
-        borderRadius: 8,
-        backgroundColor: '#DFE6E9',
-    },
-    cancelButtonText: {
+    emailText: {
+        fontSize: 14,
         color: '#636E72',
-        fontWeight: 'bold',
-    },
-    saveButton: {
-        paddingVertical: 8,
-        paddingHorizontal: 15,
-        borderRadius: 8,
-        backgroundColor: '#4B7BEC',
-    },
-    saveButtonText: {
-        color: 'white',
-        fontWeight: 'bold',
+        marginTop: 5,
     },
     statsContainer: {
         width: '100%',

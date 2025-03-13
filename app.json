@@ -20,18 +20,34 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.betel.quizbiblico"
+      "bundleIdentifier": "br.com.devluisoliveira.quiz_biblico",
+      "infoPlist": {
+        "UIBackgroundModes": [
+          "audio"
+        ]
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#4B7BEC"
       },
-      "package": "com.betel.quizbiblico"
+      "package": "br.com.devluisoliveira.quiz_biblico",
+      "permissions": [
+        "android.permission.MODIFY_AUDIO_SETTINGS"
+      ]
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": false
+        }
+      ]
+    ],
     "extra": {
       "eas": {
         "projectId": "ec807614-af8e-4ae0-8553-eddaaad52cb2"

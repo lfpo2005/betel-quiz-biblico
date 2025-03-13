@@ -1,10 +1,11 @@
 // app/result.tsx
-import React from 'react';
+import React, { useEffect } from 'react';
 import { StyleSheet, Text, View, SafeAreaView, Share } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { useLocalSearchParams, router } from 'expo-router';
 import Button from '@/components/Button';
 import ScoreDisplay from '@/components/ScoreDisplay';
+import SoundService from '@/components/SoundService';
 
 export default function ResultScreen() {
     const params = useLocalSearchParams();
@@ -15,6 +16,21 @@ export default function ResultScreen() {
 
     const totalPossibleScore = totalQuestions * 10;
     const percentage = Math.round((score / totalPossibleScore) * 100);
+
+    // Play celebration sound when results screen appears
+    useEffect(() => {
+        // We load the sounds here in case the user navigates directly to this screen
+        SoundService.loadSounds().then(() => {
+            // Play sound with a slight delay to ensure it's not cut off
+            setTimeout(() => {
+                SoundService.playSound('complete');
+            }, 300);
+        });
+
+        return () => {
+            SoundService.unloadSounds();
+        };
+    }, []);
 
     let resultMessage = '';
     let resultIcon = '';
